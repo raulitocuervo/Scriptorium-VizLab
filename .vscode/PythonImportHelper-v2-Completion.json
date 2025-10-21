@@ -1,0 +1,83 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "psycopg2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "psycopg2",
+        "description": "psycopg2",
+        "detail": "psycopg2",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "seaborn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "seaborn",
+        "description": "seaborn",
+        "detail": "seaborn",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.dates",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.dates",
+        "description": "matplotlib.dates",
+        "detail": "matplotlib.dates",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "Energy-Awareness.Data.power_vehicles_rsu",
+        "description": "Energy-Awareness.Data.power_vehicles_rsu",
+        "peekOfCode": "def main():\n    # Database connection parameters - set these as environment variables or replace directly\n    db_params = {\n        'host': os.getenv('DB_HOST', '143.129.82.101'),\n        'port': os.getenv('DB_PORT', '5432'),\n        'dbname': os.getenv('DB_NAME', 'zsmmetrics'),\n        'user': os.getenv('DB_USER', 'postgres'),\n        'password': os.getenv('DB_PASSWORD', 'postgres')\n    }\n    # Establish connection",
+        "detail": "Energy-Awareness.Data.power_vehicles_rsu",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "Energy-Awareness.Data.power_vehicles_rsu_maximums",
+        "description": "Energy-Awareness.Data.power_vehicles_rsu_maximums",
+        "peekOfCode": "def main():\n    # Database connection parameters - set these as environment variables or replace directly\n    db_params = {\n        'host': os.getenv('DB_HOST', '143.129.82.101'),\n        'port': os.getenv('DB_PORT', '5432'),\n        'dbname': os.getenv('DB_NAME', 'zsmmetrics'),\n        'user': os.getenv('DB_USER', 'postgres'),\n        'password': os.getenv('DB_PASSWORD', 'postgres')\n    }\n    # Establish connection",
+        "detail": "Energy-Awareness.Data.power_vehicles_rsu_maximums",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "Energy-Awareness.Data.zsm_decisions",
+        "description": "Energy-Awareness.Data.zsm_decisions",
+        "peekOfCode": "def main():\n    # Database connection parameters - set these as environment variables or replace directly\n    db_params = {\n        'host': os.getenv('DB_HOST', '143.129.82.101'),\n        'port': os.getenv('DB_PORT', '5432'),\n        'dbname': os.getenv('DB_NAME', 'zsmmetrics'),\n        'user': os.getenv('DB_USER', 'postgres'),\n        'password': os.getenv('DB_PASSWORD', 'postgres')\n    }\n    # Establish connection",
+        "detail": "Energy-Awareness.Data.zsm_decisions",
+        "documentation": {}
+    }
+]
