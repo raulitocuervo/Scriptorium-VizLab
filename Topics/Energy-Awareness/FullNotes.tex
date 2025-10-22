@@ -19,3 +19,19 @@ Max vehicles registered: 39 \gls{rsu} 5
     \caption{Relationship between the number of vehicles and power consumption for each \gls{rsu}, showing how power usage increases with load and plateaus at maximum capacity.}
     \label{fig:exp1-figure}
 \end{figure}
+
+\subsection{Data Analysis and Impact}
+A detailed analysis of the collected data, exported to a CSV file, provides deeper insights into the energy consumption patterns of the \glspl{rsu}. The analysis involved calculating the energy efficiency, defined as vehicles per watt, and modeling the power consumption trend using linear regression for each \gls{rsu}. The energy efficiency was computed by dividing the number of vehicles by the corresponding power consumption (in watts) for each data point. The trend was determined by applying a first-degree polynomial fit to the vehicle and power data for each \gls{rsu}, which yields a linear model representing the expected power usage as a function of the number of vehicles.
+
+The data confirms a strong positive correlation between the number of connected vehicles and power consumption across all \glspl{rsu}. The linear trend reveals that as more vehicles connect, the power draw increases, which is expected. However, the rate of this increase varies, highlighting the differences in hardware and configuration among the units. For instance, \gls{rsu}6 shows a steeper power consumption curve compared to \gls{rsu}5, indicating it consumes more power for each additional vehicle.
+
+The impact of these findings is significant for network management:
+\begin{itemize}
+    \item \textbf{Energy-Aware Load Balancing:} By understanding the unique power profile and efficiency of each \gls{rsu}, a central orchestrator can make smarter, energy-aware decisions. For example, during periods of low network traffic, vehicles can be consolidated onto the most energy-efficient \glspl{rsu}, allowing others to be put into a low-power state.
+    \item \textbf{Predictive Resource Management:} The trend models allow for the prediction of power consumption based on anticipated traffic loads. This enables proactive resource allocation and helps prevent over-provisioning, thereby reducing operational costs and the carbon footprint of the infrastructure.
+    \item \textbf{Heterogeneity as an Advantage:} The inherent heterogeneity of the \glspl{rsu} can be leveraged as an advantage. High-demand, performance-critical applications can be assigned to the most powerful \glspl{rsu}, while less demanding tasks can be handled by more energy-efficient, lower-capacity units, optimizing the overall performance and energy usage of the system.
+\end{itemize}
+
+To illustrate the calculations, consider a data point for \gls{rsu}1 where it serves 6 vehicles and consumes 62.0 watts. The energy efficiency is calculated as:
+\[ \text{Vehicles per Watt} = \frac{6 \text{ vehicles}}{62.0 \text{ W}} \approx 0.097 \]
+This metric indicates how many vehicles are being served for each watt of power consumed. For the trend analysis, a linear model of the form $P(v) = m \cdot v + c$ is fitted to the data for each \gls{rsu}, where $P$ is the power, $v$ is the number of vehicles, $m$ is the slope (power increase per vehicle), and $c$ is the y-intercept (base power consumption). For \gls{rsu}1, the model might yield a trend value of approximately 60.53 W at 6 vehicles, representing the expected power consumption based on the overall behavior of that specific unit. This allows for a standardized comparison of expected versus actual power draw.
