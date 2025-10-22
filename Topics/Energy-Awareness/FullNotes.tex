@@ -1,36 +1,21 @@
-\section{Experiment 1}\label{exp:1}
+\input{Topics/Energy-Awareness/Abstract.tex}
+\section{Energy-Awareness Experiment 1}\label{awar:1}
 This is my starting point \cite{3gpp-ts-22-186,3gpp_ts_26_511_v18_1_0}
 
 Every physical capability of the \gls{rsu} is different from each other in terms of maximum wattage.
 When the \glspl{rsu} were stressed based on the amount of vehicles, they have a limit of watts also linked to the CPU consumption.
 
-\input{Tables/avg-vehicles.tex}
-\input{Tables/Location-mapping-rsu.tex}
+\input{Topics/Energy-Awareness/Tables/avg-vehicles.tex}
+\input{Topics/Energy-Awareness/Tables/Location-mapping-rsu.tex}
 
 Table~\ref{tab:rsu-max-capacity} summarizes the maximum number of users (U) and the corresponding maximum wattage (W) capacity for each \gls{rsu}. As shown, \gls{rsu} 5 supports the highest number of vehicles and reaches a higher power consumption compared to the others. This variation highlights the heterogeneous nature of the \glspl{rsu} in the testbed. Figure~\ref{fig:exp1-figure} visually presents the relationship between the number of vehicles and the power consumption for each \gls{rsu}, illustrating how the power usage increases with the load and reaches a plateau at the maximum capacity.
 
 Max vehicles registered: 39 \gls{rsu} 5
-\begin{table}[ht]
-    \centering
-    \caption{Maximum U and W capacity for each \gls{rsu}.}
-    \begin{tabular}{ccc}
-        \hline
-        \gls{rsu} & Max U & Max W Capacity \\
-        \hline
-        1         & 27    & 69             \\
-        2         & 27    & 67             \\
-        3         & 27    & 70             \\
-        5         & 36    & 68             \\
-        6         & 27    & 77             \\
-        7         & 31    & 75             \\
-        \hline
-    \end{tabular}
-    \label{tab:rsu-max-capacity}
-\end{table}
+\input{Topics/Energy-Awareness/Tables/max-vehicles-power-rsu.tex}
 
 \begin{figure}[!htb]
     \centering
-    \includegraphics[width=1\columnwidth]{Figures/power_vehicles_rsu_maximums.pdf}
+    \includegraphics[width=1\columnwidth]{Topics/Energy-Awareness/Figures/power_vehicles_rsu_maximums.pdf}
     \caption{Relationship between the number of vehicles and power consumption for each \gls{rsu}, showing how power usage increases with load and plateaus at maximum capacity.}
     \label{fig:exp1-figure}
 \end{figure}

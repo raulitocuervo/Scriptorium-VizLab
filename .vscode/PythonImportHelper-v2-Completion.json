@@ -56,28 +56,28 @@
     {
         "label": "main",
         "kind": 2,
-        "importPath": "Energy-Awareness.Data.power_vehicles_rsu",
-        "description": "Energy-Awareness.Data.power_vehicles_rsu",
+        "importPath": "Topics.Energy-Awareness.Data.power_vehicles_rsu",
+        "description": "Topics.Energy-Awareness.Data.power_vehicles_rsu",
         "peekOfCode": "def main():\n    # Database connection parameters - set these as environment variables or replace directly\n    db_params = {\n        'host': os.getenv('DB_HOST', '143.129.82.101'),\n        'port': os.getenv('DB_PORT', '5432'),\n        'dbname': os.getenv('DB_NAME', 'zsmmetrics'),\n        'user': os.getenv('DB_USER', 'postgres'),\n        'password': os.getenv('DB_PASSWORD', 'postgres')\n    }\n    # Establish connection",
-        "detail": "Energy-Awareness.Data.power_vehicles_rsu",
+        "detail": "Topics.Energy-Awareness.Data.power_vehicles_rsu",
         "documentation": {}
     },
     {
         "label": "main",
         "kind": 2,
-        "importPath": "Energy-Awareness.Data.power_vehicles_rsu_maximums",
-        "description": "Energy-Awareness.Data.power_vehicles_rsu_maximums",
+        "importPath": "Topics.Energy-Awareness.Data.power_vehicles_rsu_maximums",
+        "description": "Topics.Energy-Awareness.Data.power_vehicles_rsu_maximums",
         "peekOfCode": "def main():\n    # Database connection parameters - set these as environment variables or replace directly\n    db_params = {\n        'host': os.getenv('DB_HOST', '143.129.82.101'),\n        'port': os.getenv('DB_PORT', '5432'),\n        'dbname': os.getenv('DB_NAME', 'zsmmetrics'),\n        'user': os.getenv('DB_USER', 'postgres'),\n        'password': os.getenv('DB_PASSWORD', 'postgres')\n    }\n    # Establish connection",
-        "detail": "Energy-Awareness.Data.power_vehicles_rsu_maximums",
+        "detail": "Topics.Energy-Awareness.Data.power_vehicles_rsu_maximums",
         "documentation": {}
     },
     {
         "label": "main",
         "kind": 2,
-        "importPath": "Energy-Awareness.Data.zsm_decisions",
-        "description": "Energy-Awareness.Data.zsm_decisions",
+        "importPath": "Topics.Energy-Awareness.Data.zsm_decisions",
+        "description": "Topics.Energy-Awareness.Data.zsm_decisions",
         "peekOfCode": "def main():\n    # Database connection parameters - set these as environment variables or replace directly\n    db_params = {\n        'host': os.getenv('DB_HOST', '143.129.82.101'),\n        'port': os.getenv('DB_PORT', '5432'),\n        'dbname': os.getenv('DB_NAME', 'zsmmetrics'),\n        'user': os.getenv('DB_USER', 'postgres'),\n        'password': os.getenv('DB_PASSWORD', 'postgres')\n    }\n    # Establish connection",
-        "detail": "Energy-Awareness.Data.zsm_decisions",
+        "detail": "Topics.Energy-Awareness.Data.zsm_decisions",
         "documentation": {}
     }
 ]
