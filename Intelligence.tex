@@ -1,0 +1,65 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+%Template version as of 6/27/2024
+
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{glossaries}
+\usepackage{url}
+\usepackage{adjustbox}      % for scaling tables
+\usepackage[table]{xcolor} % To color rows in a table
+
+\usepackage{tabularx}
+\usepackage[margin=1in]{geometry}
+% \usepackage[
+%     colorlinks=true,      % Use colored text instead of boxes
+%     linkcolor=black,       % Color for internal links (e.g., table of contents)
+%     citecolor=black,       % Color for citations
+%     urlcolor=blue,        % Color for URLs
+%     filecolor=blue,       % Color for file links
+%     menucolor=blue,       % (optional) Color for Acrobat menu items
+%     linktoc=all,          % Color both the section and page number in TOC
+%     pdfborder={0 0 0}     % No border around links
+% ]{hyperref}
+
+
+% Glossaries Configuration
+\input{Glossary/glossaries.tex} 
+
+% Reference Configuration
+\renewcommand{\citedash}{--}
+\renewcommand{\citepunct}{,}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+% Space Configuration
+\frenchspacing
+\renewcommand{\baselinestretch}{0.87}
+
+\title{Intelligence}
+
+% \author{Raúl Cuervo Bello\IEEEauthorrefmark{1}, Miguel Camelo\IEEEauthorrefmark{2}, Johann Marquez-Barja\IEEEauthorrefmark{1}, and Nina Slamnik-Kriještorac\IEEEauthorrefmark{1}\\
+%     \IEEEauthorrefmark{1} University of Antwerp - imec, IDLab - Faculty of Applied Engineering, Belgium \\ \quad\IEEEauthorrefmark{2} University of Antwerp - imec, IDLab - Department of Computer Science, Belgium}
+
+\maketitle
+
+% \input{Sections/Abstract.tex}
+
+% \begin{IEEEkeywords}
+%     Zero-Touch Management, Energy Efficiency, 6G, Vehicular Networks, Smart Highway, Sustainability, Edge Computing
+% \end{IEEEkeywords}
+\glsresetall
+
+\input{Topics/Intelligence/FullNotes.tex}
+
+\bibliography{Bibliography/References.bib}
+\bibliographystyle{ieeetr}
+\definecolor{added}{rgb}{0.9,0.9,1}
+
+\end{document}
