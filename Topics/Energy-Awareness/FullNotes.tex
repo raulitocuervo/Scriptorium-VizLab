@@ -35,3 +35,13 @@ The impact of these findings is significant for network management:
 To illustrate the calculations, consider a data point for \gls{rsu}1 where it serves 6 vehicles and consumes 62.0 watts. The energy efficiency is calculated as:
 \[ \text{Vehicles per Watt} = \frac{6 \text{ vehicles}}{62.0 \text{ W}} \approx 0.097 \]
 This metric indicates how many vehicles are being served for each watt of power consumed. For the trend analysis, a linear model of the form $P(v) = m \cdot v + c$ is fitted to the data for each \gls{rsu}, where $P$ is the power, $v$ is the number of vehicles, $m$ is the slope (power increase per vehicle), and $c$ is the y-intercept (base power consumption). For \gls{rsu}1, the model might yield a trend value of approximately 60.53 W at 6 vehicles, representing the expected power consumption based on the overall behavior of that specific unit. This allows for a standardized comparison of expected versus actual power draw.
+
+\section{ToDo's}
+\begin{enumerate}
+    \item The evaluation shows qualitative correlations and an illustrative table/figure, but lacks clear quantitative metrics (e.g., \% energy saved, baseline comparison, statistical significance, confidence intervals).
+    \item The MCDM method and parameter choices (weights, thresholds, ranking rules, how priority between latency vs energy is negotiated) are not fully specified and appear ad-hoc. This hurts reproducibility and clarity.
+    \item The paper lacks discussion/measurements of orchestration latency, control-plane overhead, the time to migrate/scale services, and the energy/CPU cost of running the ZSM analytics itself.
+    \item Validation focuses on a “best-effort infotainment” profile; safety-critical or low-latency V2X services (the most energy-sensitive/critical) are not evaluated.
+    \item No error bars or statistical tests are shown; it is unclear how repeatable the experiments are and whether observed effects are significant.
+    \item If possible, emulate denser scenarios (more RSUs or higher vehicle densities) or use simulations to show how the approach scales beyond the eight-RSU testbed. Discuss limitations for urban scenarios.
+\end{enumerate}
